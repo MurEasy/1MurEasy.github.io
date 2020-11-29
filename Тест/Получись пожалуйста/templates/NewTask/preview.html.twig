@@ -1,0 +1,12 @@
+<div class="preview_task">
+		<div class="col-md-8 col-lg-8 align-middle" >
+			<p>Имя пользователя: {{ (authorized) ? username : 'Guest' }}</p>
+			<p>Электронная почта: %js_replace_email%</p>
+			<div id="response"></div>
+			<div class="clear"></div>
+			<p>Текст задачи: %js_replace_text%</p>
+			<p>Статус задачи: Не выполнено</p>
+			<button type="button" onclick="closePreview('preview_task', 'upload_form')">Закрыть предпросмотр</button>
+		</div>
+	</div>
+</div>

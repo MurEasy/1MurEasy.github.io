@@ -1,0 +1,14 @@
+{% import 'macros.twig' as  macros %}
+<!DOCTYPE html>
+<html>
+	<head>
+        <link rel="stylesheet" type="text/css" href="https://authorizationform.000webhostapp.com/public/css/error.css"/>
+		<title>Упс, что-то пошло не так</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	</head>
+	<body>
+		{{ macros.nested(error) }}
+        <a href="{{ url }}" class="button">{{ text }}</a>
+		
+	</body>
+</html>
